@@ -73,119 +73,44 @@
   <ItemGroup>
     <Content Include="Content\apple-touch-icon.png" />
     <Content Include="Content\favicon.ico" />
-    <Content Include="Content\prettyPhoto\dark_rounded\btnNext.png" />
-    <Content Include="Content\prettyPhoto\dark_rounded\btnPrevious.png" />
-    <Content Include="Content\prettyPhoto\dark_rounded\contentPattern.png" />
-    <Content Include="Content\prettyPhoto\dark_rounded\default_thumbnail.gif" />
-    <Content Include="Content\prettyPhoto\dark_rounded\loader.gif" />
-    <Content Include="Content\prettyPhoto\dark_rounded\sprite.png" />
-    <Content Include="Content\prettyPhoto\dark_square\btnNext.png" />
-    <Content Include="Content\prettyPhoto\dark_square\btnPrevious.png" />
-    <Content Include="Content\prettyPhoto\dark_square\contentPattern.png" />
-    <Content Include="Content\prettyPhoto\dark_square\default_thumbnail.gif" />
-    <Content Include="Content\prettyPhoto\dark_square\loader.gif" />
-    <Content Include="Content\prettyPhoto\dark_square\sprite.png" />
-    <Content Include="Content\prettyPhoto\default\default_thumb.png" />
-    <Content Include="Content\prettyPhoto\default\loader.gif" />
-    <Content Include="Content\prettyPhoto\default\sprite.png" />
-    <Content Include="Content\prettyPhoto\default\sprite_next.png" />
-    <Content Include="Content\prettyPhoto\default\sprite_prev.png" />
-    <Content Include="Content\prettyPhoto\default\sprite_x.png" />
-    <Content Include="Content\prettyPhoto\default\sprite_y.png" />
-    <Content Include="Content\prettyPhoto\facebook\btnNext.png" />
-    <Content Include="Content\prettyPhoto\facebook\btnPrevious.png" />
-    <Content Include="Content\prettyPhoto\facebook\contentPatternBottom.png" />
-    <Content Include="Content\prettyPhoto\facebook\contentPatternLeft.png" />
-    <Content Include="Content\prettyPhoto\facebook\contentPatternRight.png" />
-    <Content Include="Content\prettyPhoto\facebook\contentPatternTop.png" />
-    <Content Include="Content\prettyPhoto\facebook\default_thumbnail.gif" />
-    <Content Include="Content\prettyPhoto\facebook\loader.gif" />
-    <Content Include="Content\prettyPhoto\facebook\sprite.png" />
-    <Content Include="Content\prettyPhoto\light_rounded\btnNext.png" />
-    <Content Include="Content\prettyPhoto\light_rounded\btnPrevious.png" />
-    <Content Include="Content\prettyPhoto\light_rounded\default_thumbnail.gif" />
-    <Content Include="Content\prettyPhoto\light_rounded\loader.gif" />
-    <Content Include="Content\prettyPhoto\light_rounded\sprite.png" />
-    <Content Include="Content\prettyPhoto\light_square\btnNext.png" />
-    <Content Include="Content\prettyPhoto\light_square\btnPrevious.png" />
-    <Content Include="Content\prettyPhoto\light_square\default_thumbnail.gif" />
-    <Content Include="Content\prettyPhoto\light_square\loader.gif" />
-    <Content Include="Content\prettyPhoto\light_square\sprite.png" />
     <Content Include="Scripts\admin.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\affix.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\alert.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\bootstrap.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\bootstrap.min.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\button.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\carousel.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\collapse.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\dropdown.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\modal.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\popover.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\scrollspy.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\tab.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\tooltip.js" />
-    <Content Include="Scripts\bootstrap-3.1.1\js\transition.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\affix.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\alert.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\bootstrap.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\button.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\carousel.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\collapse.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\dropdown.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\modal.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\popover.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\scrollspy.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\tab.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\tooltip.js" />
+    <Content Include="Scripts\bootstrap-3.2.0\js\transition.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\hover-dropdown.js" />
-    <Content Include="Scripts\isotope\jquery.isotope.min.js" />
-    <Content Include="Scripts\prettyPhoto\jquery.prettyPhoto.min.js" />
-    <Content Include="Scripts\rs-plugin\jquery.themepunch.plugins.min.js" />
-    <Content Include="Scripts\rs-plugin\jquery.themepunch.revolution.js" />
-    <Content Include="Scripts\rs-plugin\jquery.themepunch.revolution.min.js" />
     <Content Include="Scripts\styler.js" />
-    <Content Include="Scripts\validationEngine\jquery.validationEngine-en.js" />
-    <Content Include="Scripts\validationEngine\jquery.validationEngine.js" />
-    <Content Include="Styles\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
-    <Content Include="Styles\prettyPhoto\prettyPhoto.css" />
-    <Content Include="Styles\rs-plugin\assets\arrowleft.png" />
-    <Content Include="Styles\rs-plugin\assets\arrowright.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_large_left.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_large_right.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_left.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_left2.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_right.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_right2.png" />
-    <Content Include="Styles\rs-plugin\assets\black50.png" />
-    <Content Include="Styles\rs-plugin\assets\boxed_bgtile.png" />
-    <Content Include="Styles\rs-plugin\assets\bullet.png" />
-    <Content Include="Styles\rs-plugin\assets\bullets.png" />
-    <Content Include="Styles\rs-plugin\assets\bullets2.png" />
-    <Content Include="Styles\rs-plugin\assets\bullet_boxed.png" />
-    <Content Include="Styles\rs-plugin\assets\coloredbg.png" />
-    <Content Include="Styles\rs-plugin\assets\grain.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile_3x3.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile_3x3_white.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile_white.png" />
-    <Content Include="Styles\rs-plugin\assets\large_left.png" />
-    <Content Include="Styles\rs-plugin\assets\large_right.png" />
-    <Content Include="Styles\rs-plugin\assets\loader.gif" />
-    <Content Include="Styles\rs-plugin\assets\loader2.gif" />
-    <Content Include="Styles\rs-plugin\assets\navigdots.png" />
-    <Content Include="Styles\rs-plugin\assets\navigdots_bgtile.png" />
-    <Content Include="Styles\rs-plugin\assets\shadow1.png" />
-    <Content Include="Styles\rs-plugin\assets\shadow2.png" />
-    <Content Include="Styles\rs-plugin\assets\shadow3.png" />
-    <Content Include="Styles\rs-plugin\assets\small_left.png" />
-    <Content Include="Styles\rs-plugin\assets\small_left_boxed.png" />
-    <Content Include="Styles\rs-plugin\assets\small_right.png" />
-    <Content Include="Styles\rs-plugin\assets\small_right_boxed.png" />
-    <Content Include="Styles\rs-plugin\assets\timer.png" />
-    <Content Include="Styles\rs-plugin\assets\timerdot.png" />
-    <Content Include="Styles\rs-plugin\assets\transparent.jpg" />
-    <Content Include="Styles\rs-plugin\assets\white50.png" />
-    <Content Include="Styles\rs-plugin\css\captions-original.css" />
-    <Content Include="Styles\rs-plugin\css\dynamic-captions.css" />
-    <Content Include="Styles\rs-plugin\css\settings.css" />
-    <Content Include="Styles\rs-plugin\css\static-captions.css" />
-    <Content Include="Styles\rs-plugin\font\revicons.svg" />
-    <Content Include="Styles\rs-plugin\images\decor_inside.png" />
-    <Content Include="Styles\rs-plugin\images\decor_inside_white.png" />
-    <Content Include="Styles\rs-plugin\images\decor_testimonial.png" />
-    <Content Include="Styles\rs-plugin\images\gradient\g30.png" />
-    <Content Include="Styles\rs-plugin\images\gradient\g40.png" />
+    <Content Include="Styles\forms.css">
+      <DependentUpon>forms.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\forms.min.css">
+      <DependentUpon>forms.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\layout.css">
+      <DependentUpon>layout.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\layout.min.css">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\navigation.css">
+      <DependentUpon>navigation.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\navigation.min.css">
+      <DependentUpon>navigation.css</DependentUpon>
+    </Content>
     <Content Include="Styles\site-amelia.css">
       <DependentUpon>site-amelia.less</DependentUpon>
     </Content>
@@ -282,7 +207,9 @@
     <Content Include="Styles\site-yeti.min.css">
       <DependentUpon>site-yeti.less</DependentUpon>
     </Content>
-    <Content Include="Styles\site.css" />
+    <Content Include="Styles\type.css">
+      <DependentUpon>type.less</DependentUpon>
+    </Content>
     <Content Include="Styles\type.less" />
     <Content Include="Styles\site-default.css.map">
       <DependentUpon>site-default.css</DependentUpon>
@@ -332,14 +259,21 @@
     <Content Include="Styles\site-darkly.css.map">
       <DependentUpon>site-darkly.css</DependentUpon>
     </Content>
-    <Content Include="Styles\latest-twitter.less" />
-    <Content Include="Styles\rs-plugin\assets\arrows.psd" />
-    <Content Include="Styles\rs-plugin\assets\bullets.psd" />
-    <Content Include="Styles\rs-plugin\assets\small_arrows.psd" />
-    <Content Include="Styles\rs-plugin\font\revicons.eot" />
-    <Content Include="Styles\rs-plugin\font\revicons.ttf" />
-    <Content Include="Styles\rs-plugin\font\revicons.woff" />
-    <None Include="Styles\validationEngine\validationEngine.jquery.less" />
+    <Content Include="Styles\layout.css.map">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\forms.css.map">
+      <DependentUpon>forms.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\navigation.css.map">
+      <DependentUpon>navigation.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\type.css.map">
+      <DependentUpon>type.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\type.min.css">
+      <DependentUpon>type.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -347,7 +281,6 @@
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
     <Content Include="Placement.info" />
-    <Content Include="Styles\zen-gallery.less" />
     <Content Include="Views\ErrorPage.cshtml" />
     <Content Include="Views\Header.cshtml" />
     <Content Include="Views\Layout.cshtml" />
@@ -358,6 +291,9 @@
     <Content Include="Views\Title.cshtml" />
     <Content Include="Views\User.cshtml" />
     <Content Include="Views\EditorTemplates\Parts\Theme.AdminThemeSettings.cshtml" />
+    <Content Include="Views\Document.cshtml" />
+    <Content Include="Views\Resources.cshtml" />
+    <Content Include="Views\Orchard.Themes\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -390,46 +326,46 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\bootstrap-3.1.1\less\alerts.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\badges.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\bootstrap.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\breadcrumbs.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\button-groups.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\buttons.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\carousel.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\close.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\code.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\component-animations.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\dropdowns.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\forms.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\glyphicons.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\grid.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\input-groups.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\jumbotron.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\labels.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\list-group.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\media.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\mixins.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\modals.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\navbar.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\navs.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\normalize.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\pager.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\pagination.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\panels.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\popovers.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\print.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\progress-bars.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\responsive-utilities.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\scaffolding.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\tables.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\theme.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\thumbnails.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\tooltip.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\type.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\utilities.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\variables.less" />
-    <Content Include="Styles\bootstrap-3.1.1\less\wells.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\alerts.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\badges.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\bootstrap.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\breadcrumbs.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\button-groups.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\buttons.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\carousel.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\close.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\code.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\component-animations.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\dropdowns.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\forms.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\glyphicons.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\grid.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\input-groups.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\jumbotron.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\labels.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\list-group.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\media.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\modals.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\navbar.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\navs.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\normalize.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\pager.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\pagination.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\panels.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\popovers.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\print.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\progress-bars.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\responsive-utilities.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\scaffolding.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\tables.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\theme.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\thumbnails.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\tooltip.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\type.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\utilities.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\variables.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\wells.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\site-default.less" />
@@ -456,9 +392,9 @@
     <Content Include="Styles\font-awesome-4.1.0\fonts\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Styles\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Styles\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Styles\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Styles\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Styles\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\layout.less" />
@@ -557,6 +493,40 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.2.0\less\responsive-embed.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\alerts.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\background-variant.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\border-radius.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\buttons.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\center-block.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\clearfix.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\forms.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\gradients.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\grid-framework.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\grid.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\hide-text.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\image.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\labels.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\list-group.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\nav-divider.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\nav-vertical-align.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\opacity.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\pagination.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\panels.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\progress-bar.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\reset-filter.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\resize.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\responsive-visibility.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\size.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\tab-focus.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\table-row.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\text-emphasis.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\text-overflow.less" />
+    <Content Include="Styles\bootstrap-3.2.0\less\mixins\vendor-prefixes.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
