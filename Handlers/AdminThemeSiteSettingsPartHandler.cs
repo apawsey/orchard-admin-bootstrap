@@ -10,7 +10,7 @@ namespace Admin.Bootstrap.Handlers {
         public AdminThemeSiteSettingsPartHandler() {
             T = NullLocalizer.Instance;
             Filters.Add(new ActivatingFilter<AdminThemeSettingsPart>("Site"));
-            Filters.Add(new TemplateFilterForPart<AdminThemeSettingsPart>("AdminThemeSettings", "Parts/Theme.AdminThemeSettings", "admin theme"));
+            Filters.Add(new TemplateFilterForPart<AdminThemeSettingsPart>("AdminThemeSettings", "Parts/AdminTheme.ThemeSettings", "Admin Theme"));
         }
 
         public Localizer T { get; set; }

@@ -91,6 +91,12 @@
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\hover-dropdown.js" />
     <Content Include="Scripts\styler.js" />
+    <Content Include="Styles\admin.css">
+      <DependentUpon>admin.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\admin.min.css">
+      <DependentUpon>admin.css</DependentUpon>
+    </Content>
     <Content Include="Styles\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Styles\forms.css">
@@ -99,6 +105,26 @@
     <Content Include="Styles\forms.min.css">
       <DependentUpon>forms.css</DependentUpon>
     </Content>
+    <Content Include="Styles\Images\adminNavBackground.gif" />
+    <Content Include="Styles\Images\backgroundGradient.gif" />
+    <Content Include="Styles\Images\backgroundHeader.gif" />
+    <Content Include="Styles\Images\icon-advisory.png" />
+    <Content Include="Styles\Images\icon-contribute.png" />
+    <Content Include="Styles\Images\icon-docs.png" />
+    <Content Include="Styles\Images\icon-friends.png" />
+    <Content Include="Styles\Images\icon-gallery.png" />
+    <Content Include="Styles\Images\icon-settings.png" />
+    <Content Include="Styles\Images\icons.png" />
+    <Content Include="Styles\Images\info.gif" />
+    <Content Include="Styles\Images\menu-default.png" />
+    <Content Include="Styles\Images\menu-glyph.png" />
+    <Content Include="Styles\Images\menuClosed.gif" />
+    <Content Include="Styles\Images\menuClosedHover.gif" />
+    <Content Include="Styles\Images\menuOpen.gif" />
+    <Content Include="Styles\Images\menuOpenHover.gif" />
+    <Content Include="Styles\Images\orchardLogo.gif" />
+    <Content Include="Styles\Images\tableHeaderBackgroundRed.gif" />
+    <Content Include="Styles\Images\vinesBackgroundBottom.gif" />
     <Content Include="Styles\layout.css">
       <DependentUpon>layout.less</DependentUpon>
     </Content>
@@ -290,7 +316,7 @@
     <Content Include="Views\Pager.cshtml" />
     <Content Include="Views\Title.cshtml" />
     <Content Include="Views\User.cshtml" />
-    <Content Include="Views\EditorTemplates\Parts\Theme.AdminThemeSettings.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts\AdminTheme.ThemeSettings.cshtml" />
     <Content Include="Views\Document.cshtml" />
     <Content Include="Views\Resources.cshtml" />
     <Content Include="Views\Orchard.Themes\Admin\Index.cshtml" />
@@ -527,6 +553,20 @@
     <Content Include="Styles\bootstrap-3.2.0\less\mixins\text-emphasis.less" />
     <Content Include="Styles\bootstrap-3.2.0\less\mixins\text-overflow.less" />
     <Content Include="Styles\bootstrap-3.2.0\less\mixins\vendor-prefixes.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Images\icons.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\admin.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\admin.css.map">
+      <DependentUpon>admin.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\Theme.ThemeSettings.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
