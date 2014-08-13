@@ -1231,4 +1231,7 @@ fieldset.delete-button {
 #layout-main {
   margin-bottom: 50px;
 }
+.navbar-right .glyphicon {
+  color: #cdcdcd;
+}
 /*# sourceMappingURL=admin.css.map */

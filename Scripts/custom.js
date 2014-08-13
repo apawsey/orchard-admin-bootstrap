@@ -36,4 +36,10 @@
     $("#toTop").click(function () {
         $("body,html").animate({ scrollTop: 0 }, 2e3);
     });
+
+    //MENU TOGGLE
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
 });
