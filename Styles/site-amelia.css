@@ -2352,7 +2352,6 @@ output {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  margin-bottom: 20px;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -8331,7 +8330,6 @@ textarea {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  margin-bottom: 20px;
 }
 input[type="color"]:focus,
 input[type="date"]:focus,
@@ -8756,9 +8754,6 @@ html.orchard-users form fieldset {
 .comment-count {
   margin-right: 20px;
 }
-.dropdown-menu ul {
-  margin-top: -16px;
-}
 /*
  * Base structure
  */
@@ -8838,7 +8833,7 @@ body {
 /*
  * Placeholder dashboard ideas
  */
-.placeholders {
+/*.placeholders {
   margin-bottom: 30px;
   text-align: center;
 }
@@ -8851,7 +8846,7 @@ body {
 .placeholder img {
   display: inline-block;
   border-radius: 50%;
-}
+}*/
 /* Navigation
 ***************************************************************/
 #navshortcut {
@@ -9828,6 +9823,9 @@ fieldset.delete-button {
 .dashboard .help-item h2.advisory {
   background: #f1f1f2 url('images/icon-advisory.png') no-repeat 5px 50%;
   padding-left: 40px;
+}
+.dropdown-menu ul {
+  margin-top: -16px;
 }
 .navbar-brand {
   font-family: 'Lobster', cursive;

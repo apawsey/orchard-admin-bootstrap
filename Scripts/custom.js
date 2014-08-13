@@ -21,11 +21,6 @@
     // ALERTS
     $('.alert').alert();
 
-    // FORMS
-    $('form').validationEngine({
-        promptPosition: 'centerRight'
-    });
-
     // PAGINATION
     $('#pager-current').parent('li').addClass('active');
 

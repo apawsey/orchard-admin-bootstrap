@@ -2352,7 +2352,6 @@ output {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  margin-bottom: 20px;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -8331,7 +8330,6 @@ textarea {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  margin-bottom: 20px;
 }
 input[type="color"]:focus,
 input[type="date"]:focus,
@@ -8824,7 +8822,7 @@ body {
 /*
  * Placeholder dashboard ideas
  */
-.placeholders {
+/*.placeholders {
   margin-bottom: 30px;
   text-align: center;
 }
@@ -8837,7 +8835,7 @@ body {
 .placeholder img {
   display: inline-block;
   border-radius: 50%;
-}
+}*/
 /* Navigation
 ***************************************************************/
 #navshortcut {

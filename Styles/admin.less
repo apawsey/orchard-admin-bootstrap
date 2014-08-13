@@ -1,4 +1,19 @@
-﻿/*
+﻿/* Reset
+***************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, button, submit {
+    margin: 0;
+    padding: 0;
+}
+
+/*
  * Base structure
  */
 
@@ -41,9 +56,6 @@ body {
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
     border-right: 1px solid #eee;
   }
@@ -89,7 +101,7 @@ body {
  * Placeholder dashboard ideas
  */
 
-.placeholders {
+/*.placeholders {
   margin-bottom: 30px;
   text-align: center;
 }
@@ -102,20 +114,79 @@ body {
 .placeholder img {
   display: inline-block;
   border-radius: 50%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header - Branding and Login  
+***************************************************************/
+.zone-header {
+
+}
+#branding {
+    /*width: 15.401%;*/
+    width: 240px;
+    height:50px;
+    float:left;
+}
+.zone-header #app {
+    float:left;
+    font-size:2.4em;
+    padding:.4em 0;
+}
+.zone-header #app a {
+    background:url(images/orchardLogo.gif) no-repeat;
+    display:block;
+    height:60px;
+    margin:-11px 0 0 14px;
+    text-indent:-9999px;
+    width:40px;
+}
+#site {
+    font-size: 1.385em; /*18px*/
+}
+#site a {
+    width: 186px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+#site a, #site a:visited, #site a:active {
+    color:#fff;
+    float:left;
+    line-height:50px;
+    position:relative;  
+    text-shadow: rgba(0,0,0,.9) 0px 0px 2px;
+}
+#page-title {
+    /*position:relative;
+    top:12px;
+    left:24px;*/
+    padding:14px 0 0 260px;
+    text-shadow:rgba(0,0,0,.1) 0px 0px 1px;    
+}
+#login {
+    display:block;
+    float:right;
+    margin:14px 20px 0 0;
+    white-space:nowrap;
+    color: #777777;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+#login a, #login a:link, #login a:visited {
+    padding:0;
+}
 
 /* Navigation
 ***************************************************************/
@@ -209,7 +280,7 @@ body {
 ul.menuItems {margin:6px 0 0 0;}
 
 /******Tabs******/
-#local-navigation {margin:8px 0 -8px 0;}
+#local-navigation{position:relative; top:2px;}
 
 .localmenu li {
     display: inline;
@@ -237,12 +308,13 @@ ul.menuItems {margin:6px 0 0 0;}
     color: #3A822E;
 }
 #content {
+    display:inline-block;
+    width:100%;
     background-color: #fff;
     padding: 16px 24px;
-    margin:8px 0 0 0;
     border: 1px solid #e4e5e6;
     clear:both;
-   
+    
      /*CSS3 properties*/
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -967,10 +1039,8 @@ fieldset.delete-button {
 
 .dashboard .help-item 
 {
-    width: 245px;
     min-height: 180px;
     float: left;
-    margin: 0 55px 55px 0;
 }
 
 .dashboard a:hover 
@@ -990,36 +1060,71 @@ fieldset.delete-button {
 }
 .dashboard .help-item h2.gallery
 {
-    background: #f1f1f2 url('images/icon-gallery.png') no-repeat 5px 50%;
+    background: url('images/icon-gallery.png') no-repeat 5px 50%;
     padding-left: 40px;
 }
 
 .dashboard .help-item h2.friends
 {
-    background: #f1f1f2 url('images/icon-friends.png') no-repeat 5px 50%;
+    background: url('images/icon-friends.png') no-repeat 5px 50%;
     padding-left: 40px;
 }
 
 .dashboard .help-item h2.start
 {
-    background: #f1f1f2 url('images/icon-settings.png') no-repeat 5px 50%;
+    background: url('images/icon-settings.png') no-repeat 5px 50%;
     padding-left: 40px;
 }
 
 .dashboard .help-item h2.docs
 {
-    background: #f1f1f2 url('images/icon-docs.png') no-repeat 5px 50%;
+    background: url('images/icon-docs.png') no-repeat 5px 50%;
     padding-left: 38px;
 }
 
 .dashboard .help-item h2.contribute
 {
-    background: #f1f1f2 url('images/icon-contribute.png') no-repeat 5px 50%;
+    background: url('images/icon-contribute.png') no-repeat 5px 50%;
     padding-left: 40px;
 }
 
 .dashboard .help-item h2.advisory
 {
-    background: #f1f1f2 url('images/icon-advisory.png') no-repeat 5px 50%;
+    background: url('images/icon-advisory.png') no-repeat 5px 50%;
     padding-left: 40px;
 }
+
+/* Print
+***************************************************************/
+@media print {
+    #menu, #branding, #login, .save-button, #footer {
+        display: none;
+    }
+    #main, #page-title {
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    html, body, #layout-content {
+        background: white;
+        height: auto;
+    }
+}
+
+/* Footer
+***************************************************************/
+#footer{
+height: 40px;
+padding: 8px 15px 0;
+padding-left: 233px;
+border-top: 1px solid #CECECE;
+background: #2a2725;
+width: 100%;
+position: absolute;
+display: block;
+bottom: 0;
+z-index: 901;
+position:fixed;
+color:#fff;
+}
+
+#layout-main{margin-bottom:50px;}
