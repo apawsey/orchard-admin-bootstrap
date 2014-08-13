@@ -42,4 +42,10 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+
+    //PREVENT TRANSITIONS ON PAGE LOAD
+    window.addEventListener('load', function load() {
+        window.removeEventListener('load', load, false);
+        document.body.classList.remove('load');
+    }, false);
 });
