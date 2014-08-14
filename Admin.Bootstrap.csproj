@@ -568,6 +568,9 @@
   <ItemGroup>
     <Content Include="Views\EditorTemplates\Parts\Theme.ThemeSettings.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\Admin\Index.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

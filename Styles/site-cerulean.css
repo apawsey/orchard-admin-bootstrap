@@ -2336,7 +2336,6 @@ output {
 }
 .form-control {
   display: block;
-  width: 100%;
   height: 38px;
   padding: 8px 12px;
   font-size: 14px;
@@ -5916,9 +5915,7 @@ html.floating-nav.boxed-layout .navbar-wrapper:after,
 #footer-quad:before,
 #footer-quad:after,
 html.sticky-footer.boxed-layout #footer:before,
-html.sticky-footer.boxed-layout #footer:after,
-html.orchard-users form:before,
-html.orchard-users form:after {
+html.sticky-footer.boxed-layout #footer:after {
   content: " ";
   display: table;
 }
@@ -5945,8 +5942,7 @@ html.floating-nav.boxed-layout .navbar-wrapper:after,
 #layout-main:after,
 #layout-tripel:after,
 #footer-quad:after,
-html.sticky-footer.boxed-layout #footer:after,
-html.orchard-users form:after {
+html.sticky-footer.boxed-layout #footer:after {
   clear: both;
 }
 .center-block {
@@ -8314,7 +8310,6 @@ input[type="week"],
 select,
 textarea {
   display: block;
-  width: 100%;
   height: 38px;
   padding: 8px 12px;
   font-size: 14px;
@@ -8715,22 +8710,15 @@ ul {
   border-color: #dddddd;
   cursor: not-allowed;
 }
-html.orchard-users form {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-html.orchard-users form fieldset {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  html.orchard-users form fieldset {
-    float: left;
-    width: 50%;
-  }
-}
+/*html.orchard-users {
+    form {
+        .make-row;
+
+        fieldset {
+            .make-md-column(6);
+        }
+    }
+}*/
 .input-validation-error {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -8765,6 +8753,71 @@ html.orchard-users form fieldset {
 .tags,
 .comment-count {
   margin-right: 20px;
+}
+/* Reset
+***************************************************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+button,
+submit {
+  margin: 0;
+  padding: 0;
 }
 /*
  * Base structure
@@ -8802,10 +8855,6 @@ body {
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
     border-right: 1px solid #eee;
   }
@@ -8859,6 +8908,67 @@ body {
   display: inline-block;
   border-radius: 50%;
 }*/
+/* Header - Branding and Login  
+***************************************************************/
+#branding {
+  /*width: 15.401%;*/
+  width: 240px;
+  height: 50px;
+  float: left;
+}
+.zone-header #app {
+  float: left;
+  font-size: 2.4em;
+  padding: .4em 0;
+}
+.zone-header #app a {
+  background: url(images/orchardLogo.gif) no-repeat;
+  display: block;
+  height: 60px;
+  margin: -11px 0 0 14px;
+  text-indent: -9999px;
+  width: 40px;
+}
+#site {
+  font-size: 1.385em;
+  /*18px*/
+}
+#site a {
+  width: 186px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+#site a,
+#site a:visited,
+#site a:active {
+  color: #fff;
+  float: left;
+  line-height: 50px;
+  position: relative;
+  text-shadow: rgba(0, 0, 0, 0.9) 0px 0px 2px;
+}
+#page-title {
+  /*position:relative;
+    top:12px;
+    left:24px;*/
+  padding: 14px 0 0 260px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px;
+}
+#login {
+  display: block;
+  float: right;
+  margin: 14px 20px 0 0;
+  white-space: nowrap;
+  color: #777777;
+}
+#login a,
+#login a:link,
+#login a:visited {
+  padding: 0;
+}
 /* Navigation
 ***************************************************************/
 #navshortcut {
@@ -8967,7 +9077,8 @@ ul.menuItems {
 }
 /******Tabs******/
 #local-navigation {
-  margin: 8px 0 -8px 0;
+  position: relative;
+  top: 2px;
 }
 .localmenu li {
   display: inline;
@@ -8998,9 +9109,10 @@ ul.menuItems {
   color: #3A822E;
 }
 #content {
+  display: inline-block;
+  width: 100%;
   background-color: #fff;
   padding: 16px 24px;
-  margin: 8px 0 0 0;
   border: 1px solid #e4e5e6;
   clear: both;
   /*CSS3 properties*/
@@ -9797,10 +9909,8 @@ fieldset.delete-button {
   padding: 10px 0 0 0;
 }
 .dashboard .help-item {
-  width: 245px;
   min-height: 180px;
   float: left;
-  margin: 0 55px 55px 0;
 }
 .dashboard a:hover {
   text-decoration: underline;
@@ -9813,31 +9923,196 @@ fieldset.delete-button {
   font-size: 16px;
 }
 .dashboard .help-item h2.gallery {
-  background: #f1f1f2 url('images/icon-gallery.png') no-repeat 5px 50%;
+  background: url('images/icon-gallery.png') no-repeat 5px 50%;
   padding-left: 40px;
 }
 .dashboard .help-item h2.friends {
-  background: #f1f1f2 url('images/icon-friends.png') no-repeat 5px 50%;
+  background: url('images/icon-friends.png') no-repeat 5px 50%;
   padding-left: 40px;
 }
 .dashboard .help-item h2.start {
-  background: #f1f1f2 url('images/icon-settings.png') no-repeat 5px 50%;
+  background: url('images/icon-settings.png') no-repeat 5px 50%;
   padding-left: 40px;
 }
 .dashboard .help-item h2.docs {
-  background: #f1f1f2 url('images/icon-docs.png') no-repeat 5px 50%;
+  background: url('images/icon-docs.png') no-repeat 5px 50%;
   padding-left: 38px;
 }
 .dashboard .help-item h2.contribute {
-  background: #f1f1f2 url('images/icon-contribute.png') no-repeat 5px 50%;
+  background: url('images/icon-contribute.png') no-repeat 5px 50%;
   padding-left: 40px;
 }
 .dashboard .help-item h2.advisory {
-  background: #f1f1f2 url('images/icon-advisory.png') no-repeat 5px 50%;
+  background: url('images/icon-advisory.png') no-repeat 5px 50%;
   padding-left: 40px;
+}
+/* Print
+***************************************************************/
+@media print {
+  #menu,
+  #branding,
+  #login,
+  .save-button,
+  #footer {
+    display: none;
+  }
+  #main,
+  #page-title {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  html,
+  body,
+  #layout-content {
+    background: white;
+    height: auto;
+  }
+}
+/* Footer
+***************************************************************/
+#footer {
+  height: 40px;
+  padding: 8px 15px 0;
+  padding-left: 233px;
+  border-top: 1px solid #CECECE;
+  background: #2a2725;
+  width: 100%;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  z-index: 901;
+  position: fixed;
+  color: #fff;
+}
+#layout-main {
+  margin-bottom: 50px;
+}
+.navbar-right .glyphicon {
+  color: #cdcdcd;
 }
 .dropdown-menu ul {
   margin-top: -16px;
+}
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Toggle Styles */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled {
+  padding-left: 250px;
+}
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  top: 50px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+#page-content-wrapper {
+  width: 100%;
+  padding: 15px;
+}
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+/* Sidebar Styles */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+@media (min-width: 768px) {
+  #wrapper {
+    padding-left: 250px;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    width: 250px;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+/* PREVENT TRANSITION ON PAGE LOAD */
+.load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+/* bulk action */
+.bulk-actions select,
+.bulk-actions input {
+  display: inline;
+}
+/* modules */
+.features.summary-view .feature {
+  height: 9em;
+}
+.features .feature .summary {
+  padding: .8em .8em;
 }
 .navbar {
   background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
