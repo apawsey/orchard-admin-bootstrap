@@ -1,4 +1,4 @@
-﻿@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -252,8 +252,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot');
-  src: url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -9359,6 +9359,7 @@ input.textMedium,
 input.text-medium,
 input.text-box {
   line-height: 1.2em;
+  display: inline;
 }
 input.text-small,
 input.text.small {
@@ -10087,4 +10088,3 @@ table .info a,
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-/*# sourceMappingURL=site-cosmo.css.map */
