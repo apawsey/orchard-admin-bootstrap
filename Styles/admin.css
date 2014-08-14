@@ -1,4 +1,4 @@
-﻿/* Reset
+/* Reset
 ***************************************************************/
 html,
 body,
@@ -626,6 +626,7 @@ input.textMedium,
 input.text-medium,
 input.text-box {
   line-height: 1.2em;
+  display: inline;
 }
 input.text-small,
 input.text.small {
@@ -1234,4 +1235,3 @@ fieldset.delete-button {
 .navbar-right .glyphicon {
   color: #cdcdcd;
 }
-/*# sourceMappingURL=admin.css.map */
