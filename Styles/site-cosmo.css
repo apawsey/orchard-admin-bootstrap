@@ -1,4 +1,4 @@
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+﻿@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -252,8 +252,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot');
+  src: url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('bootstrap-3.2.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -9491,67 +9491,6 @@ input.button,
 x:-moz-any-link {
   padding: 3px 14px 3px 14px;
 }
-button:hover,
-.button:hover,
-a.button:hover {
-  border-color: #3a822e;
-  color: #eefcec;
-  text-decoration: none;
-  background: #809f43;
-  /*CSS3 properties*/
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ff6e7f45', endColorstr='#ff6a7b42');
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#6e7f45), to(#6a7b42));
-  background: -moz-linear-gradient(top, #6e7f45, #6a7b42);
-}
-button:active,
-.buton:active,
-a.button:active {
-  text-decoration: none;
-  background: #6a7b42;
-  border: 1px solid #487328;
-  color: #fff;
-  /*CSS3 properties*/
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 1px;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ff9bb36c', endColorstr='#ff809f43');
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#9bb36c), to(#809f43));
-  background: -moz-linear-gradient(top, #9bb36c, #809f43);
-}
-button:focus::-moz-focus-inner,
-.button:focus::-moz-focus-inner {
-  border: 1px dotted transparent;
-}
-/*disabled*/
-.button.disabled,
-.button.disabled:visited,
-.button.disabled:hover,
-.button.disabled:active,
-.button.disabled:focus {
-  background-color: #eee;
-  border: 1px solid #ababab;
-  color: #ababab;
-  cursor: default;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ffeeeeee', endColorstr='#ffeeeeee');
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#eeeeee));
-  background: -moz-linear-gradient(top, #eeeeee, #eeeeee);
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-/* and allow all of that button style to be undone and beyond - to look like a link */
-button.link {
-  background: none;
-  border: 0;
-  padding: inherit;
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  filter: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
 .cancel {
   margin: 0 0 0 .93em;
 }
@@ -10088,3 +10027,4 @@ table .info a,
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+/*# sourceMappingURL=site-cosmo.css.map */
