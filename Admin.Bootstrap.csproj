@@ -573,6 +573,36 @@
   <ItemGroup>
     <Content Include="Views\Orchard.Projections\Binding\Index.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Workflows\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.ContentTypes\Admin\ListParts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Message.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Breadcrumb.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\HeadPreload.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LocalMenuItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MenuItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MenuItemLink.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\NotFound.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Taxonomies\Admin\Index.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

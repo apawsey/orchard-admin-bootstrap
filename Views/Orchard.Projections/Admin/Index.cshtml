@@ -43,8 +43,8 @@
 		</select>
         <button type="submit" name="submit.Filter" value="@T("Filter")">@T("Filter")</button>
     </fieldset>
-    <fieldset>		
-        <table class="items">
+    <fieldset class="table-responsive">
+        <table class="table table-hover table-bordered items">
             <thead>
                 <tr>
                     <th scope="col" class="checkbox">&nbsp;&darr;</th>
@@ -52,27 +52,29 @@
                     <th scope="col" class="actions">&nbsp;</th>
                 </tr>
             </thead>
-            @foreach (var entry in Model.Queries) { 
+            @foreach (var entry in Model.Queries)
+            {
                 <tr>
                     <td>
-                        <input type="hidden" value="@Model.Queries[index].QueryId" name="@Html.NameOf(m => m.Queries[index].QueryId)"/>
-                        <input type="checkbox" value="true" name="@Html.NameOf(m => m.Queries[index].IsChecked)"/>
+                        <input type="hidden" value="@Model.Queries[index].QueryId" name="@Html.NameOf(m => m.Queries[index].QueryId)" />
+                        <input type="checkbox" value="true" name="@Html.NameOf(m => m.Queries[index].IsChecked)" />
                     </td>
                     <td>
-                        @Html.ActionLink(entry.Name, "Edit", new { id = entry.QueryId }) 
+                        @Html.ActionLink(entry.Name, "Edit", new { id = entry.QueryId })
                     </td>
-                    <td>
+                    <td class="text-right">
                         @Html.ActionLink(T("Properties").ToString(), "Edit", new { Area = "Contents", id = entry.QueryId, returnurl = HttpContext.Current.Request.RawUrl }) |
                         @Html.ActionLink(T("Edit").ToString(), "Edit", new { id = entry.QueryId }) |
                         @Html.ActionLink(T("Delete").ToString(), "Delete", new { id = entry.QueryId }, new { itemprop = "RemoveUrl UnsafeUrl" })
-                        @if (entry.Query.FilterGroups.SelectMany(x => x.Filters).Any()) {
+                        @if (entry.Query.FilterGroups.SelectMany(x => x.Filters).Any())
+                        {
                             <text>| </text> @Html.ActionLink(T("Preview").ToString(), "Preview", new { id = entry.QueryId })
                         }
                     </td>
                 </tr>
-                index++;
+                        index++;
             }
         </table>
-	@Display(Model.Pager)
+        @Display(Model.Pager)
     </fieldset>
 } 

@@ -13,7 +13,7 @@
         @Html.ActionLink(T("Install a new Theme").ToString(), "Install")
     </p>
 } else {
-    <h3 id="currentThemeTitle">@T("Current Theme") VIEW OVERRIDE</h3>
+    <h3 id="currentThemeTitle">@T("Current Theme")</h3>
 
     @Display.ThemeEntry_Current(ContentPart: Model.CurrentTheme)
 }

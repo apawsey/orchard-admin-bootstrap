@@ -49,3 +49,9 @@
         document.body.classList.remove('load');
     }, false);
 });
+
+//TODO add confirm dialog box
+function submitForm(form, action) {
+    $('input#publishActions').val(action);
+    form.submit();
+}

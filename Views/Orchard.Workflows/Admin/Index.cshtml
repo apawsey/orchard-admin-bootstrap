@@ -15,15 +15,18 @@
 
 @using (Html.BeginFormAntiForgeryPost()) { 
     @Html.ValidationSummary()
-    <div class="manage">@Html.ActionLink(T("Create new Workflow Definition").ToString(), "Create", new { Area = "Orchard.Workflows", returnurl = HttpContext.Current.Request.RawUrl }, new { @class = "button primaryAction" })</div>
+    <div class="manage">@Html.ActionLink(T("Create new Workflow Definition").ToString(), "Create", new { Area = "Orchard.Workflows", returnurl = HttpContext.Current.Request.RawUrl }, new { @class = "btn btn-primary" })</div>
 
     <fieldset class="bulk-actions">
-        <label for="publishActions">@T("Actions:")</label>
-        <select id="publishActions" name="@Html.NameOf(m => m.Options.BulkAction)">
-            @Html.SelectOption(Model.Options.BulkAction, WorkflowDefinitionBulk.None, T("Choose action...").ToString())
-            @Html.SelectOption(Model.Options.BulkAction, WorkflowDefinitionBulk.Delete, T("Delete").ToString())
-        </select>
-        <button type="submit" name="submit.BulkEdit" value="@T("Apply")">@T("Apply")</button>
+        <input id="publishActions" name="@Html.NameOf(m => m.Options.BulkAction)" type="hidden" value="@WorkflowDefinitionBulk.None" />
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Bulk Actions <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="javascript:submitForm($('form'), '@WorkflowDefinitionBulk.Delete');">@T("Remove").ToString()</a></li>
+            </ul>
+        </div>
     </fieldset>
     <fieldset class="bulk-actions">
 		<label for="filterResults">@T("Sort by:")</label>
@@ -38,42 +41,44 @@
 				@Html.SelectOption((int)Model.Pager.PageSize, size, size.ToString())
 			}
 		</select>
-        <button type="submit" name="submit.Filter" value="@T("Filter")">@T("Filter")</button>
+        <button class="btn btn-primary" type="submit" name="submit.Filter" value="@T("Filter")">@T("Filter")</button>
     </fieldset>
-    <fieldset>		
-        <table class="items">
+    <fieldset class="table-responsive">
+        <table class="table table-hover table-bordered items">
             <thead>
                 <tr>
-                    <th scope="col" class="checkbox"><input type="checkbox" class="check-all"/></th>
+                    <th scope="col"><input type="checkbox" class="check-all" /></th>
                     <th scope="col">@T("Name")</th>
                     <th scope="col">&nbsp;</th>
                     <th scope="col" class="actions">&nbsp;</th>
                 </tr>
             </thead>
-            @foreach (var entry in Model.WorkflowDefinitions) { 
+            @foreach (var entry in Model.WorkflowDefinitions)
+            {
                 <tr>
                     <td>
-                        <input type="hidden" value="@Model.WorkflowDefinitions[index].WokflowDefinitionId" name="@Html.NameOf(m => m.WorkflowDefinitions[index].WokflowDefinitionId)"/>
-                        <input type="checkbox" value="true" name="@Html.NameOf(m => m.WorkflowDefinitions[index].IsChecked)"/>
+                        <input type="hidden" value="@Model.WorkflowDefinitions[index].WokflowDefinitionId" name="@Html.NameOf(m => m.WorkflowDefinitions[index].WokflowDefinitionId)" />
+                        <input type="checkbox" value="true" name="@Html.NameOf(m => m.WorkflowDefinitions[index].IsChecked)" />
                     </td>
                     <td>
-                        @Html.ActionLink(entry.Name, "Edit", new { id = entry.WokflowDefinitionId }) 
+                        @Html.ActionLink(entry.Name, "Edit", new { id = entry.WokflowDefinitionId })
                     </td>
                     <td>
-                        @if (entry.WorkflowDefinitionRecord.WorkflowRecords.Any()) {
-                             @T("{0} Running", entry.WorkflowDefinitionRecord.WorkflowRecords.Count)
+                        @if (entry.WorkflowDefinitionRecord.WorkflowRecords.Any())
+                        {
+                            @T("{0} Running", entry.WorkflowDefinitionRecord.WorkflowRecords.Count)
                         }
                         &nbsp;
                     </td>
-                    <td>
+                    <td class="text-right">
                         @* TODO: As WD is not a Content Item, an EditProperties action is necessary @Html.ActionLink(T("Properties").ToString(), "Edit", new { Area = "Contents", id = entry.WokflowDefinitionId, returnurl = HttpContext.Current.Request.RawUrl }) |*@
                         @Html.ActionLink(T("Edit").ToString(), "Edit", new { id = entry.WokflowDefinitionId }) |
                         @Html.ActionLink(T("Delete").ToString(), "Delete", new { id = entry.WokflowDefinitionId }, new { itemprop = "RemoveUrl UnsafeUrl" })
                     </td>
                 </tr>
-                index++;
+                        index++;
             }
         </table>
-	@Display(Model.Pager)
+        @Display(Model.Pager)
     </fieldset>
 } 
