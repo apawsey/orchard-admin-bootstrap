@@ -18,15 +18,19 @@
 
 @using (Html.BeginFormAntiForgeryPost()) { 
     @Html.ValidationSummary()
-    <div class="manage">@Html.ActionLink(T("Add a new Query").ToString(), "Create", new { Area = "Contents", id = "Query", returnurl = HttpContext.Current.Request.RawUrl }, new { @class = "button primaryAction" })</div>
+    <div class="manage">@Html.ActionLink(T("Add a new Query").ToString(), "Create", new { Area = "Contents", id = "Query", returnurl = HttpContext.Current.Request.RawUrl }, new { @class = "btn btn-primary" })</div>
 
     <fieldset class="bulk-actions">
-        <label for="publishActions">@T("Actions:")</label>
-        <select id="publishActions" name="@Html.NameOf(m => m.Options.BulkAction)">
-            @Html.SelectOption(Model.Options.BulkAction, QueriesBulkAction.None, T("Choose action...").ToString())
-            @Html.SelectOption(Model.Options.BulkAction, QueriesBulkAction.Delete, T("Delete").ToString())
-        </select>
-        <button type="submit" name="submit.BulkEdit" value="@T("Apply")">@T("Apply")</button>
+        <input id="publishActions" name="@Html.NameOf(m => m.Options.BulkAction)" type="hidden" value="@QueriesBulkAction.None" />
+        <button name="submit.BulkEdit" type="submit" class="hidden" value="@T("Apply")">@T("Apply")</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Bulk Actions <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="javascript:submitForm($('form'), '@QueriesBulkAction.Delete');">@T("Delete").ToString()</a></li>
+            </ul>
+        </div>
     </fieldset>
     <fieldset class="bulk-actions">
 		<label for="filterResults">@T("Sort by:")</label>
@@ -41,7 +45,7 @@
 				@Html.SelectOption((int)Model.Pager.PageSize, size, size.ToString())
 			}
 		</select>
-        <button type="submit" name="submit.Filter" value="@T("Filter")">@T("Filter")</button>
+        <button class="btn btn-primary" type="submit" name="submit.Filter" value="@T("Filter")">@T("Filter")</button>
     </fieldset>
     <fieldset class="table-responsive">
         <table class="table table-hover table-bordered items">
@@ -49,7 +53,7 @@
                 <tr>
                     <th scope="col" class="checkbox">&nbsp;&darr;</th>
                     <th scope="col">@T("Name")</th>
-                    <th scope="col" class="actions">&nbsp;</th>
+                    <th class="text-right" scope="col">@T("Actions")</th>
                 </tr>
             </thead>
             @foreach (var entry in Model.Queries)

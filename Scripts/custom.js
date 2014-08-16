@@ -53,5 +53,10 @@
 //TODO add confirm dialog box
 function submitForm(form, action) {
     $('input#publishActions').val(action);
-    form.submit();
+    if ($('button[name="submit.BulkEdit"]') != null) {
+        var button = $('button[name="submit.BulkEdit"]').click();
+    }
+    else {
+        form.submit();
+    }
 }

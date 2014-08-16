@@ -10,6 +10,7 @@
 	@Html.ValidationSummary()
 	<fieldset class="bulk-actions">
         <input id="publishActions" name="@Html.NameOf(m => m.BulkAction)" type="hidden" value="@TaxonomiesAdminIndexBulkAction.None" />
+        <button name="submit.BulkEdit" type="submit" class="hidden" value="@T("Apply")">@T("Apply")</button>
         <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                 Bulk Actions <span class="caret"></span>
@@ -31,7 +32,7 @@
                 <tr>
                     <th scope="col"><input type="checkbox" class="check-all" /></th>
                     <th scope="col">@T("Name")</th>
-                    <th scope="col"></th>
+                    <th class="text-right" scope="col">@T("Actions")</th>
                 </tr>
             </thead>
             @foreach (var taxonomyEntry in Model.Taxonomies)
