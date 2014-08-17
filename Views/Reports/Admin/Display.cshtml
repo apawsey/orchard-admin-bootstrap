@@ -16,7 +16,7 @@
                 <tr>
                     <th scope="col">@T("Type")</th>
                     <th scope="col">@T("Message")</th>
-                    <th class="text-right" scope="col">@T("Date")</th>
+                    <th scope="col">@T("Date")</th>
                 </tr>
             </thead>
             @foreach (var reportEntry in Model.Report.Entries)
@@ -28,7 +28,7 @@
                     <td>
                         @reportEntry.Message
                     </td>
-                    <td class="text-right">
+                    <td class="text-nowrap">
                         @reportEntry.Utc.ToLocalTime().ToShortDateString() @reportEntry.Utc.ToLocalTime().ToShortTimeString()
                     </td>
                 </tr>
