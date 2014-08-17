@@ -9725,6 +9725,9 @@ fieldset.delete-button {
 .page-size-options select {
   display: inline;
 }
+#placement li .shape-type {
+  height: auto;
+}
 .dropdown-menu ul {
   margin-top: -16px;
 }
