@@ -50,11 +50,16 @@
     }, false);
 });
 
+jQuery.fn.exists = function () { return this.length > 0; }
+
 //TODO add confirm dialog box
 function submitForm(form, action) {
     $('input#publishActions').val(action);
-    if ($('button[name="submit.BulkEdit"]') != null) {
+    if ($('button[name="submit.BulkEdit"]').exists()) {
         var button = $('button[name="submit.BulkEdit"]').click();
+    }
+    else if ($('button[name="submit.BulkExecute"]').exists()) {
+        var button = $('button[name="submit.BulkExecute"]').click();
     }
     else {
         form.submit();

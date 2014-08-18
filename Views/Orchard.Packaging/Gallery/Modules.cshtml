@@ -27,13 +27,13 @@
             @Html.SelectOption(Model.Options.Order, PackagingExtensionsOrder.Alphanumeric, T("Alphanumeric").ToString())
         </select>
 
-        <button id="apply-bulk-actions" class="apply-bulk-actions-auto" type="submit">@T("Apply")</button>
+        <button id="apply-bulk-actions" class="btn btn-primary" type="submit">@T("Apply")</button>
     </fieldset>
 
     <fieldset class="search-actions">
         <input type="text" id="searchText" class="text single-line" name="@Html.NameOf(m => m.Options.SearchText)" value="@Model.Options.SearchText" />
 
-        <button type="submit">@T("Search")</button>
+        <button class="btn btn-primary" type="submit">@T("Search")</button>
     </fieldset>
 
     if (Model.Extensions.Any()) {
