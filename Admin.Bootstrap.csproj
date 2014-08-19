@@ -302,6 +302,7 @@
     <Content Include="Styles\type.min.css">
       <DependentUpon>type.css</DependentUpon>
     </Content>
+    <Content Include="Styles\orchard-admin-themes-admin.css" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
