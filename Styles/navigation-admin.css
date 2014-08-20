@@ -2,51 +2,14 @@
     display: none;
 }
 
-.navigation-menu {
-margin-bottom:20px;
+
+
+.navigation-menu .panel-heading  {
+	background: url(images/move.gif) no-repeat 12px 14px;
+    padding-left:32px;
 }
 
-.navigation-menu ol ol {
-	margin: 0;
-	padding: 0;
-	padding-left: 30px; /* gap between each level */
-}
 
-.navigation-menu ol.sortable, .navigation-menu ol.sortable ol {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-.navigation-menu ol.sortable {
-}
-
-.navigation-menu li {
-	margin: 0;
-	padding: 0;
-}
-
-.navigation-menu li div  {
-	border: 1px solid #ccc;
-	cursor: move;
-	padding: 3px 10px 3px 30px;
-	margin: 2px;
-	background: #eee;
-	display: inline-block;
-	min-width: 200px;
-	width: 100%;
-}
-
-.navigation-menu li div:hover  {
-	background: #eee url(images/move.gif) no-repeat 9px 7px;
-	border: 1px solid #999;
-}
-
-.navigation-menu-item h2 
-{
-    display: inline;
-    font-size:1.077em;
-}
 
 .navigation-position
 {

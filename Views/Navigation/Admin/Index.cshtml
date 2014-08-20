@@ -41,20 +41,7 @@
 {
     @Html.Hidden("menuId", Model.CurrentMenu.Id)
     <div class="row">
-        <div class="col-lg-8">
-            <div class="navigation-menu">
-                @if (Model.MenuItemEntries.Any())
-                {
-                    @RenderMenuItems(Model.MenuItemEntries, 0)
-                }
-                else
-                {
-                    <h2>@T("The menu is empty")</h2>
-                }
-            </div>
-        </div>
-
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-4">
             <ul class="menu-items-zone">
                 @foreach (var descriptor in Model.MenuItemDescriptors.OrderBy(x => x.DisplayName))
                 {
@@ -71,8 +58,21 @@
                 }
             </ul>
         </div>
-    </div>
 
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="navigation-menu">
+                @if (Model.MenuItemEntries.Any())
+                {
+                    @RenderMenuItems(Model.MenuItemEntries, 0)
+                }
+                else
+                {
+                    <h2>@T("The menu is empty")</h2>
+                }
+            </div>
+        </div>
+
+    </div>
     <fieldset class="actions">
         <button id="saveButton" type="submit" class="btn btn-primary">@T("Save All")</button>
     </fieldset>
@@ -117,26 +117,28 @@
 
             first = false;
 
-            @:<li class="navigation-menu-item" data-index="@i">
+            @:<li class="panel panel-default no-nest" data-index="@i">
 
 
-                <div>
-                    <h2>@menuPartEntry.Text</h2>
-                    <span class="navigation-type">(@menuPartEntry.ContentItem.TypeDefinition.DisplayName)</span>
-                    <span class="navigation-position"><input type="text" class="text" name="@Html.NameOf(m => m.MenuItemEntries[i].Position)" value="@menuPartEntry.Position" /></span>
-                    <span class="navigation-actions">
-                        <input type="hidden" name="@Html.NameOf(m => m.MenuItemEntries[i].MenuItemId)" value="@menuPartEntry.MenuItemId" />
-                        @Html.ItemEditLink(T("Edit").Text, menuPartEntry.ContentItem, new { returnUrl = Request.RawUrl })@T(" | ")
-                        @Html.ActionLink(T("Delete").Text, "Delete", new { id = menuPartEntry.MenuItemId }, new { @class = "remove", itemprop = "RemoveUrl UnsafeUrl" })
-                    </span>
-                </div>
 
-                continue;
-                }
+            <div class="panel-heading no-nest">@menuPartEntry.Text</div>
+            <div class="panel-body no-nest">
+                <span class="navigation-type">(@menuPartEntry.ContentItem.TypeDefinition.DisplayName)</span>
+                <span class="navigation-position"><input type="text" class="text" name="@Html.NameOf(m => m.MenuItemEntries[i].Position)" value="@menuPartEntry.Position" /></span>
+                <span class="navigation-actions">
+                    <input type="hidden" name="@Html.NameOf(m => m.MenuItemEntries[i].MenuItemId)" value="@menuPartEntry.MenuItemId" />
+                    @Html.ItemEditLink(T("Edit").Text, menuPartEntry.ContentItem, new { returnUrl = Request.RawUrl })@T(" | ")
+                    @Html.ActionLink(T("Delete").Text, "Delete", new { id = menuPartEntry.MenuItemId }, new { @class = "remove", itemprop = "RemoveUrl UnsafeUrl" })
+                </span>
+            </div>
 
-                // done with current level
-                if (level < currentLevel)
-                {
+
+            continue;
+        }
+
+        // done with current level
+        if (level < currentLevel)
+        {
                 @:</li>
             break;
         }
