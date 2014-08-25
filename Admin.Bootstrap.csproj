@@ -67,6 +67,8 @@
   <ItemGroup>
     <Content Include="Content\apple-touch-icon.png" />
     <Content Include="Content\favicon.ico" />
+    <Content Include="Styles\Images\menu.navigation.png" />
+    <Content Include="Styles\Images\move.gif" />
     <Content Include="Scripts\admin-contenttypes.js" />
     <Content Include="Scripts\admin.js" />
     <Content Include="Scripts\bootstrap-3.2.0\js\affix.js" />
@@ -90,6 +92,8 @@
     </Content>
     <Content Include="Scripts\hover-dropdown.js" />
     <Content Include="Scripts\jquery.jsPlumb-1.4.1-all-min.js" />
+    <Content Include="Scripts\jquery.mjs.nestedSortable.js" />
+    <Content Include="Scripts\navigation-admin.js" />
     <Content Include="Scripts\orchard-workflows-serialize.js" />
     <Content Include="Scripts\orchard-workflows.js" />
     <Content Include="Scripts\styler.js" />
@@ -133,6 +137,7 @@
     <Content Include="Styles\layout.min.css">
       <DependentUpon>layout.css</DependentUpon>
     </Content>
+    <Content Include="Styles\navigation-admin.css" />
     <Content Include="Styles\navigation.css">
       <DependentUpon>navigation.less</DependentUpon>
     </Content>
@@ -608,9 +613,6 @@
     <Content Include="Views\MenuItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\MenuItemLink.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -935,6 +937,141 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Orchard.Themes.Admin\ThemePreview.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Themes\ThemePreview.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\Admin\CreateMenuItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Menu.DeleteButton.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MenuItem.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Items\Content-User.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\Filter\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\Filter\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\SortCriterion\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\SortCriterion\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\Property\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\Property\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\Layout\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\Layout\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Projections\Layout\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\DefinitionTemplates\AdminMenuPartTypeSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\EditorTemplates\Parts.MenuItem.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\EditorTemplates\Parts.MenuWidget.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\EditorTemplates\Parts.Navigation.AdminMenu.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\EditorTemplates\Parts.Navigation.Menu.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\EditorTemplates\Parts.ShapeMenuItemPart.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\Content-Menu.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\Menu.DeleteButton.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\Menu.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\MenuItem.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\MenuItemLink-HtmlMenuItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\MenuItemLink-ShapeMenuItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Navigation\Parts.MenuWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Widgets\Admin\AddLayer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Widgets\Admin\AddWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Widgets\Admin\ChooseWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Widgets\Admin\EditLayer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Widgets\Admin\EditWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Widgets\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget.ControlWrapper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget.DeleteButton.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget.Wrapper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WidgetLayersControl.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WidgetLayerVisibility.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WidgetPlacement.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WidgetPlacement.Orphans.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WidgetPlacement.Zones.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WidgetSimplePreview.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
