@@ -110,3 +110,7 @@
     .menu-items-zone li a:hover {
         border-color:#487328;
     }
+
+.navbar-btn {
+    margin-right:15px;
+}

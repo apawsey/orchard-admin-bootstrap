@@ -8505,6 +8505,7 @@ button {
   color: #ffffff;
   background-color: #4e5d6c;
   border-color: transparent;
+  color: #FFF;
 }
 button:focus,
 button:active:focus,
@@ -8828,7 +8829,7 @@ body {
 ***************************************************************/
 #branding {
   /*width: 15.401%;*/
-  width: 240px;
+  width: 250px;
   height: 50px;
   float: left;
 }

@@ -8512,6 +8512,7 @@ button {
   color: #ffffff;
   background-color: #474949;
   border-color: #474949;
+  color: #FFF;
 }
 button:focus,
 button:active:focus,
@@ -8940,7 +8941,7 @@ body {
 ***************************************************************/
 #branding {
   /*width: 15.401%;*/
-  width: 240px;
+  width: 250px;
   height: 50px;
   float: left;
 }

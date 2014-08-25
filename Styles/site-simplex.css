@@ -8518,6 +8518,7 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4f5151', endColorstr='#ff3f4141', GradientType=0);
   filter: none;
   border: 1px solid #2e2f2f;
+  color: #FFF;
 }
 button:focus,
 button:active:focus,
@@ -8839,7 +8840,7 @@ body {
 ***************************************************************/
 #branding {
   /*width: 15.401%;*/
-  width: 240px;
+  width: 250px;
   height: 50px;
   float: left;
 }

@@ -6382,6 +6382,7 @@ button {
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
+  color: #FFF;
 }
 button:focus,
 button:active:focus,

@@ -67,6 +67,10 @@
   <ItemGroup>
     <Content Include="Content\apple-touch-icon.png" />
     <Content Include="Content\favicon.ico" />
+    <Content Include="Scripts\history.js" />
+    <Content Include="Scripts\knockout-2.3.0.js" />
+    <Content Include="Scripts\media-library.js" />
+    <Content Include="Scripts\modal-window.js" />
     <Content Include="Styles\Images\menu.navigation.png" />
     <Content Include="Styles\Images\move.gif" />
     <Content Include="Scripts\admin-contenttypes.js" />
@@ -1072,6 +1076,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\WidgetSimplePreview.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.MediaLibrary\Admin\ChildFolders.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.MediaLibrary\Admin\Import.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.MediaLibrary\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.MediaLibrary\Admin\MediaItems.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
