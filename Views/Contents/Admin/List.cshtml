@@ -32,19 +32,19 @@
     </div>
 
     <div class="btn-group">
-        <select title="@T("Show")" class="btn btn-default" id="filterResults" name="Options.SelectedFilter">
+        <select data-toggle="tooltip" data-placement="top" title="@T("Show")" class="btn btn-default" id="filterResults" name="Options.SelectedFilter">
             @Html.SelectOption((string)Model.Options.SelectedFilter, "", T("any (show all)").ToString())
             @foreach (var filterOption in Model.Options.FilterOptions)
             {
                 @Html.SelectOption((string)Model.Options.SelectedFilter, (string)filterOption.Key, (string)filterOption.Value)
             }
         </select>
-        <select title="@T("Ordered by")" class="btn btn-default" id="orderResults" name="Options.OrderBy">
+        <select data-toggle="tooltip" data-placement="top" title="@T("Ordered by")" class="btn btn-default" id="orderResults" name="Options.OrderBy">
             @Html.SelectOption((ContentsOrder)Model.Options.OrderBy, ContentsOrder.Created, T("recently created").ToString())
             @Html.SelectOption((ContentsOrder)Model.Options.OrderBy, ContentsOrder.Modified, T("recently modified").ToString())
             @Html.SelectOption((ContentsOrder)Model.Options.OrderBy, ContentsOrder.Published, T("recently published").ToString())
         </select>
-        <select title="@T("Filter by")" class="btn btn-default" id="contentResults" name="Options.ContentsStatus">
+        <select data-toggle="tooltip" data-placement="top" title="@T("Filter by")" class="btn btn-default" id="contentResults" name="Options.ContentsStatus">
             @Html.SelectOption((ContentsStatus)Model.Options.ContentsStatus, ContentsStatus.Latest, T("latest").ToString())
             @Html.SelectOption((ContentsStatus)Model.Options.ContentsStatus, ContentsStatus.Published, T("published").ToString())
             @Html.SelectOption((ContentsStatus)Model.Options.ContentsStatus, ContentsStatus.Draft, T("unpublished").ToString())

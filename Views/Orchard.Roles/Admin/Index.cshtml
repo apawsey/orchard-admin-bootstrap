@@ -14,7 +14,7 @@
         <select id="Select1" name="roleActions">
             <option value="1">@T("Delete")</option>
         </select>
-        <button type="submit">@T("Apply")</button>
+        <button class="btn btn-primary" type="submit">@T("Apply")</button>
     </fieldset>
     <div class="manage">@Html.ActionLink(T("Add a role").ToString(), "Create", new { }, new { @class = "btn btn-primary" })</div>
     <fieldset class="table-responsive">

@@ -50,6 +50,7 @@
     }, false);
 });
 
+//Verify if object exist
 jQuery.fn.exists = function () { return this.length > 0; }
 
 //TODO add confirm dialog box
@@ -65,3 +66,6 @@ function submitForm(form, action) {
         form.submit();
     }
 }
+
+//add custom tooltip to buttons
+$('.btn').tooltip();

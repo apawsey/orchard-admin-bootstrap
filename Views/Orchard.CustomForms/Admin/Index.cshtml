@@ -19,14 +19,18 @@
     <div class="manage">@Html.ActionLink(T("Add a new Custom Form").ToString(), "Create", "Admin", new { area = "Contents", id = "CustomForm", returUrl = Request.RawUrl }, new { @class = "btn btn-primary" })</div>
 
     <fieldset class="bulk-actions">
-        <label for="publishActions">@T("Actions:")</label>
-        <select id="publishActions" name="@Html.NameOf(m => m.Options.BulkAction)">
-            @Html.SelectOption(Model.Options.BulkAction, CustomFormBulkAction.None, T("Choose action...").ToString())
-            @Html.SelectOption(Model.Options.BulkAction, CustomFormBulkAction.Publish, T("Publish").ToString()) 
-            @Html.SelectOption(Model.Options.BulkAction, CustomFormBulkAction.Unpublish, T("Unpublish").ToString())
-            @Html.SelectOption(Model.Options.BulkAction, CustomFormBulkAction.Delete, T("Delete").ToString())
-        </select>
-        <button class="btn btn-primary" type="submit" name="submit.BulkEdit" value="@T("Apply")">@T("Apply")</button>
+        <input id="publishActions" name="@Html.NameOf(m => m.Options.BulkAction)" type="hidden" value="@CustomFormBulkAction.None" />
+        <button name="submit.BulkEdit" type="submit" class="hidden" value="@T("Apply")">@T("Apply")</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Bulk Actions <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="javascript:submitForm($('form'), '@CustomFormBulkAction.Publish');">@T("Publish").ToString()</a></li>
+                <li><a href="javascript:submitForm($('form'), '@CustomFormBulkAction.Unpublish');">@T("Unpublish").ToString()</a></li>
+                <li><a href="javascript:submitForm($('form'), '@CustomFormBulkAction.Delete');">@T("Delete").ToString()</a></li>
+            </ul>
+        </div>
     </fieldset>
     <fieldset class="bulk-actions">
 		<label for="filterResults">@T("Sort by:")</label>

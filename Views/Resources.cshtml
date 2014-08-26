@@ -18,6 +18,7 @@
     Script.Include("admin.js").AtFoot();
     Script.Include("~/Core/Shapes/Scripts/html5.js").UseCondition("lt IE 9").AtHead();
     Script.Require("Bootstrap");
+    Script.Require("ToolTip");
     
     if(settings.UseHoverMenus) {
         Script.Require("HoverDropdown");

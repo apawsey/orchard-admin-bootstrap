@@ -9,7 +9,7 @@ namespace Admin.Bootstrap {
             manifest.DefineScript("HoverDropdown").SetUrl("hover-dropdown.js").SetDependencies("Bootstrap");
             manifest.DefineScript("Custom").SetUrl("custom.js").SetDependencies("jQuery");
             manifest.DefineScript("Styler").SetUrl("styler.js").SetDependencies("jQuery");
-            manifest.DefineScript("MetroDropdown").SetUrl("metro-dropdown.js").SetDependencies("jQuery");
+            manifest.DefineScript("ToolTip").SetUrl("bootstrap-3.2.0/js/tooltip.js").SetDependencies("Bootstrap");
 
         }
     }
