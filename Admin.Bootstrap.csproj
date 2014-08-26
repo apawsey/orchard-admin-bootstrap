@@ -148,6 +148,7 @@
     <Content Include="Styles\navigation.min.css">
       <DependentUpon>navigation.css</DependentUpon>
     </Content>
+    <Content Include="Styles\orchard-medialibrary-admin.css" />
     <Content Include="Styles\site-amelia.css">
       <DependentUpon>site-amelia.less</DependentUpon>
     </Content>

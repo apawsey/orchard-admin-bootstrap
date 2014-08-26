@@ -1,6 +1,4 @@
-﻿@import "orchard-admin-themes-admin.css";
-@import "navigation-admin.css";
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+﻿@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -8290,6 +8288,9 @@ ul.comments li {
 }
 .navbar-brand {
   padding-left: 0;
+}
+.navbar-header .navbar-btn {
+  margin-right: 15px;
 }
 input[type="color"],
 input[type="date"],

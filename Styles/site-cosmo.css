@@ -8289,6 +8289,9 @@ ul.comments li {
 .navbar-brand {
   padding-left: 0;
 }
+.navbar-header .navbar-btn {
+  margin-right: 15px;
+}
 input[type="color"],
 input[type="date"],
 input[type="datetime"],
