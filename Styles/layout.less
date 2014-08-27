@@ -1,4 +1,5 @@
 ﻿@import "bootstrap-3.2.0/less/bootstrap.less";
+
 html.boxed-layout {
     #layout-main-container, #layout-tripel-container, #layout-footer {
         .container;
@@ -176,4 +177,30 @@ ul.comments li {
 
 #toTop:hover {
     opacity: .7;
+}
+
+#footer {
+    display: none;
+
+    @media (min-width: @screen-xs-min) {
+        height: 40px;
+        padding: 8px 15px 0;
+        padding-left: 233px;
+        border-top: 1px solid #CECECE;
+        background: #2a2725;
+        width: 100%;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        z-index: 901;
+        position: fixed;
+        color: #fff;
+    }
+}
+
+#layout-main {
+    margin-bottom: 0;
+    @media (min-width: @screen-xs-min) {
+        margin-bottom: 50px;
+    }
 }

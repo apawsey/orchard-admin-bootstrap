@@ -8272,6 +8272,33 @@ ul.comments li {
 #toTop:hover {
   opacity: .7;
 }
+#footer {
+  display: none;
+}
+@media (min-width: 480px) {
+  #footer {
+    height: 40px;
+    padding: 8px 15px 0;
+    padding-left: 233px;
+    border-top: 1px solid #CECECE;
+    background: #2a2725;
+    width: 100%;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    z-index: 901;
+    position: fixed;
+    color: #fff;
+  }
+}
+#layout-main {
+  margin-bottom: 0;
+}
+@media (min-width: 480px) {
+  #layout-main {
+    margin-bottom: 50px;
+  }
+}
 .dropdown-menu ul {
   left: 100%;
   top: 0;
@@ -8287,6 +8314,11 @@ ul.comments li {
 }
 .navbar-brand {
   padding-left: 0;
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    width: 290px;
+  }
 }
 .navbar-header .navbar-btn {
   margin-right: 15px;
@@ -8824,6 +8856,9 @@ body {
 }*/
 /* Header - Branding and Login  
 ***************************************************************/
+#branding {
+  display: inline;
+}
 .zone-header #app {
   float: left;
   font-size: 2.4em;
@@ -9685,23 +9720,6 @@ fieldset.delete-button {
 }
 /* Footer
 ***************************************************************/
-#footer {
-  height: 40px;
-  padding: 8px 15px 0;
-  padding-left: 233px;
-  border-top: 1px solid #CECECE;
-  background: #2a2725;
-  width: 100%;
-  position: absolute;
-  display: block;
-  bottom: 0;
-  z-index: 901;
-  position: fixed;
-  color: #fff;
-}
-#layout-main {
-  margin-bottom: 50px;
-}
 .navbar-right .glyphicon {
   color: #cdcdcd;
 }
