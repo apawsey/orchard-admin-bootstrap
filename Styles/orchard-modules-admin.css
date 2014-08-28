@@ -37,7 +37,7 @@ html.dyn #main ul.features button { display:none; }
 .features .enabled.feature {
     background:#FFF;
 }
-.features.summary-view .enabled .feature, .features.summary-view .disabled.feature {
+.features.summary-view .enabled.feature, .features.summary-view .disabled.feature {
     border-color:#cfe493;
     overflow:hidden;
 }

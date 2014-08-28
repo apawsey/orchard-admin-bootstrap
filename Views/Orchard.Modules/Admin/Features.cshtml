@@ -101,7 +101,7 @@
                 var showDisable = categoryName.ToString() != "Core";
                 var showEnable = Model.IsAllowed(feature.Descriptor.Extension) && !missingDependencies.Any() && feature.Descriptor.Id != "Orchard.Setup";
 
-                <li class="feature-item col-lg-4" id="@featureId" title="@T("{0} is {1}", Html.AttributeEncode(featureName), featureState)">
+                <li class="feature-item col-md-4" id="@featureId" title="@T("{0} is {1}", Html.AttributeEncode(featureName), featureState)">
                     <div class="feature @featureClassName">
                         <div class="summary">
                             <div class="properties">
