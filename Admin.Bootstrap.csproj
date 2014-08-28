@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="Content\apple-touch-icon.png" />
     <Content Include="Content\favicon.ico" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="Scripts\history.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
     <Content Include="Scripts\media-library.js" />
@@ -149,154 +150,17 @@
       <DependentUpon>navigation.css</DependentUpon>
     </Content>
     <Content Include="Styles\orchard-medialibrary-admin.css" />
-    <Content Include="Styles\site-amelia.css">
-      <DependentUpon>site-amelia.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-amelia.min.css">
-      <DependentUpon>site-amelia.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cerulean.css">
-      <DependentUpon>site-cerulean.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cerulean.min.css">
-      <DependentUpon>site-cerulean.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cosmo.css">
-      <DependentUpon>site-cosmo.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cosmo.min.css">
-      <DependentUpon>site-cosmo.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cyborg.css">
-      <DependentUpon>site-cyborg.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cyborg.min.css">
-      <DependentUpon>site-cyborg.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-darkly.css">
-      <DependentUpon>site-darkly.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-darkly.min.css">
-      <DependentUpon>site-darkly.less</DependentUpon>
-    </Content>
+    <Content Include="Styles\orchard-modules-admin.css" />
     <Content Include="Styles\site-default.css">
       <DependentUpon>site-default.less</DependentUpon>
     </Content>
     <Content Include="Styles\site-default.min.css">
-      <DependentUpon>site-default.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-flatly.css">
-      <DependentUpon>site-flatly.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-flatly.min.css">
-      <DependentUpon>site-flatly.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-journal.css">
-      <DependentUpon>site-journal.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-journal.min.css">
-      <DependentUpon>site-journal.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-lumen.css">
-      <DependentUpon>site-lumen.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-lumen.min.css">
-      <DependentUpon>site-lumen.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-readable.css">
-      <DependentUpon>site-readable.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-readable.min.css">
-      <DependentUpon>site-readable.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-simplex.css">
-      <DependentUpon>site-simplex.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-simplex.min.css">
-      <DependentUpon>site-simplex.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-slate.css">
-      <DependentUpon>site-slate.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-slate.min.css">
-      <DependentUpon>site-slate.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-spacelab.css">
-      <DependentUpon>site-spacelab.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-spacelab.min.css">
-      <DependentUpon>site-spacelab.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-superhero.css">
-      <DependentUpon>site-superhero.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-superhero.min.css">
-      <DependentUpon>site-superhero.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-united.css">
-      <DependentUpon>site-united.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-united.min.css">
-      <DependentUpon>site-united.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-yeti.css">
-      <DependentUpon>site-yeti.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-yeti.min.css">
-      <DependentUpon>site-yeti.less</DependentUpon>
+      <DependentUpon>site-default.css</DependentUpon>
     </Content>
     <Content Include="Styles\type.css">
       <DependentUpon>type.less</DependentUpon>
     </Content>
     <Content Include="Styles\type.less" />
-    <Content Include="Styles\site-default.css.map">
-      <DependentUpon>site-default.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-spacelab.css.map">
-      <DependentUpon>site-spacelab.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-slate.css.map">
-      <DependentUpon>site-slate.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-united.css.map">
-      <DependentUpon>site-united.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cosmo.css.map">
-      <DependentUpon>site-cosmo.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-readable.css.map">
-      <DependentUpon>site-readable.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-amelia.css.map">
-      <DependentUpon>site-amelia.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-journal.css.map">
-      <DependentUpon>site-journal.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-superhero.css.map">
-      <DependentUpon>site-superhero.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-simplex.css.map">
-      <DependentUpon>site-simplex.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-yeti.css.map">
-      <DependentUpon>site-yeti.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cyborg.css.map">
-      <DependentUpon>site-cyborg.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-flatly.css.map">
-      <DependentUpon>site-flatly.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-cerulean.css.map">
-      <DependentUpon>site-cerulean.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-lumen.css.map">
-      <DependentUpon>site-lumen.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site-darkly.css.map">
-      <DependentUpon>site-darkly.css</DependentUpon>
-    </Content>
     <Content Include="Styles\layout.css.map">
       <DependentUpon>layout.css</DependentUpon>
     </Content>
@@ -411,9 +275,6 @@
     <Content Include="Styles\bootstrap-3.2.0\less\wells.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\site-default.less" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Styles\font-awesome-4.1.0\less\bordered-pulled.less" />
     <Content Include="Styles\font-awesome-4.1.0\less\core.less" />
     <Content Include="Styles\font-awesome-4.1.0\less\fixed-width.less" />
@@ -455,12 +316,6 @@
     <Content Include="Styles\bootswatch\cerulean-variables.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\site-amelia.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-cerulean.less" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Styles\bootswatch\cosmo-bootswatch.less" />
     <Content Include="Styles\bootswatch\cosmo-variables.less" />
     <Content Include="Styles\bootswatch\cyborg-bootswatch.less" />
@@ -487,45 +342,6 @@
     <Content Include="Styles\bootswatch\united-variables.less" />
     <Content Include="Styles\bootswatch\yeti-bootswatch.less" />
     <Content Include="Styles\bootswatch\yeti-variables.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-cosmo.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-cyborg.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-darkly.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-flatly.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-journal.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-lumen.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-readable.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-simplex.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-slate.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-spacelab.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-superhero.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-yeti.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\site-united.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\forms.less" />
@@ -1116,6 +932,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Orchard.MultiTenancy\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Search\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\site-default.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\site-default.css.map">
+      <DependentUpon>site-default.css</DependentUpon>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

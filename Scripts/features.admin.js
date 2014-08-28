@@ -9,13 +9,13 @@
 
             if (text == '') {
                 $("li.category").show();
-                $("li.feature:hidden").show();
+                $(".feature-item:hidden").show();
                 return;
             }
 
-            $("li.feature").each(function() {
+            $(".feature-item").each(function () {
                 var elt = $(this);
-                var value = elt.find('h3:first').text();
+                var value = elt.find('h4:first').text();
                 if (value.toLowerCase().indexOf(text.toLowerCase()) >= 0)
                     elt.show();
                 else
@@ -23,12 +23,12 @@
             });
 
             $("li.category:hidden").show();
-            var toHide = $("li.category:not(:has(li.feature:visible))").hide();
+            var toHide = $("li.category:not(:has(.feature-item:visible))").hide();
         });
     };
 
     var initializeSelectionBehavior = function() {
-        $("li.feature h3").on("change", "input[type='checkbox']", function() {
+        $("li.feature h4").on("change", "input[type='checkbox']", function() {
             var checked = $(this).is(":checked");
             var wrapper = $(this).parents("li.feature:first");
             wrapper.toggleClass("selected", checked);
@@ -36,7 +36,7 @@
     };
 
     var initializeActionLinks = function() {
-        $("li.feature .actions").on("click", "a[data-feature-action]", function(e) {
+        $("li.feature-item .actions").on("click", "a[data-feature-action]", function(e) {
             var actionLink = $(this);
             var featureId = actionLink.data("feature-id");
             var action = actionLink.data("feature-action");

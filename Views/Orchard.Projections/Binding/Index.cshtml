@@ -82,7 +82,7 @@
                 <td>
                     @entry.Binding.Description
                 </td>
-                <td>
+                <td class="text-right text-nowrap">
                     @Html.ActionLink(T("Edit").ToString(), "Edit", new { entry.Binding.Id }) |
                     @using (Html.BeginFormAntiForgeryPost(Url.Action("Delete"), FormMethod.Post, new { @class = "inline link" }))
                     {

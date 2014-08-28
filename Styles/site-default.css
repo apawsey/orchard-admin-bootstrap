@@ -9576,7 +9576,7 @@ table.items td {
   margin: 0 0.2em -0.2em;
 }
 .contentItems .related {
-  text-align: right;
+  float: right;
 }
 .contentItems .comment-count {
   line-height: 2em;
@@ -9911,12 +9911,6 @@ fieldset.delete-button {
   display: inline;
 }
 /* modules */
-.features.summary-view .feature {
-  height: 9em;
-}
-.features .feature .summary {
-  padding: .8em .8em;
-}
 /* WIDGETS */
 #widgets-layers-control select,
 #widgets-layers-control a {
